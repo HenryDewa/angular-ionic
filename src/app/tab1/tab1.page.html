@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+
+  <div id="container">
+    <strong>UUID : {{ data.uuid }}</strong>
+    <p><strong>Model : {{ data.model }}</strong></p>
+    <p><strong>OS : {{ data.operatingSystem }}</strong></p>
+    <p><strong>Platform : {{ data.platform }}</strong></p>
+  </div>
+
+   
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="addPhotoToGallery()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  
+</ion-content>
